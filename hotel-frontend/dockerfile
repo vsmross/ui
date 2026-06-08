@@ -1,0 +1,30 @@
+# ---------- Stage 1: Build Angular App ----------
+FROM node:18 AS build
+
+WORKDIR /app
+
+# Copy package.json first
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy entire project
+COPY . .
+
+# Build Angular app
+RUN npm run build --prod
+
+# ---------- Stage 2: Serve with Nginx ----------
+FROM nginx:latest
+
+# Remove default nginx content
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copy build output
+COPY --from=build /app/dist/ /usr/share/nginx/html/
+
+# Expose port
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
