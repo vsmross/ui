@@ -5,13 +5,15 @@ import { App } from './app';
 import { ApproveRequestComponent } from './components/approve-request/approve-request.component';
 import { HomeComponent } from './components/home/home.component';
 import { SettingsComponent } from './components/settings/settings.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
-    App, 
-    ApproveRequestComponent, 
+    App,
+    ApproveRequestComponent,
     HomeComponent,
-    SettingsComponent
+    SettingsComponent,
+    DashboardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideBrowserGlobalErrorListeners()],
