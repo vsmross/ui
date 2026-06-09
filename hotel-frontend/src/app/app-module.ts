@@ -1,12 +1,18 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
-import { Home } from './components/home/home';
+import { ApproveRequestComponent } from './components/approve-request/approve-request.component';
+import { HomeComponent } from './components/home/home.component';
+import { SettingsComponent } from './components/settings/settings.component';
 
 @NgModule({
-  declarations: [App, Home],
+  declarations: [
+    App, 
+    ApproveRequestComponent, 
+    HomeComponent,
+    SettingsComponent
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],

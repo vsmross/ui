@@ -5,6 +5,13 @@
     "packageManager": "npm"
   },
   "newProjectRoot": "projects",
+  "schematics": {
+    "@schematics/angular:component": {
+      "type": "component",
+      "standalone": false,
+      "style": "scss"
+    }
+  },
   "projects": {
     "hotel-frontend": {
       "projectType": "application",
