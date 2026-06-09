@@ -19,10 +19,10 @@ RUN npm run build --prod
 FROM nginx:latest
 
 # Remove default nginx content
-RUN rm -rf /usr/share/nginx/html/*
+# RUN rm -rf /usr/share/nginx/html/*
 
 # Copy build output
-COPY --from=build /app/dist/ /usr/share/nginx/html/
+COPY --from=build /app/dist/hotel-frontend/browser/ /usr/share/nginx/html/hotel-app/
 
 # Expose port
 EXPOSE 80
