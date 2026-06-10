@@ -1,1 +1,51 @@
-<p>add-new-hotel works!</p>
+<div class="row">
+    <div class="col-10">
+        <div class="input-group mb-3">
+            <div class="col-2">
+                <span class="input-group-text" id="lblName">Name: </span>
+            </div>
+            <div class="col-8">
+                <input id="txtHotelName" type="text" class="form-control" placeholder="Hotel Name" aria-label="HotelName">
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <div class="col-2">
+                <span class="input-group-text" id="lblRating">Rating: </span>
+            </div>
+            <div class="col-8">
+                <input id="txtHotelRating" type="text" class="form-control" placeholder="Hotel Rating" aria-label="HotelRating">
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <div class="col-2">
+                <label class="input-group-text" for="selectOptionHotelCity">City: </label>
+            </div>
+            <div class="col-8">
+                <select class="form-select" id="selectOptionHotelCity">
+                    <option value="1">Delhi</option>
+                    <option value="2">Sydney</option>
+                    <option selected value="3">London</option>
+                    <option value="4">Paris</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <div class="col-2">
+                <span class="input-group-text" id="lblPrice">Price: </span>
+            </div>
+            <div class="col-8">
+                <input id="txtPrice" type="text" class="form-control" placeholder="Price" aria-label="HotelPrice">
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <div class="col-2">
+                <label for="filePhoto" class="input-group-text">Upload Photo:</label>
+            </div>
+            <div class="col-8">
+                <input type="file" name="filePhoto" id="filePhoto" class="form-control" required="">
+            </div>
+        </div>
+        <button id="btnSaveHotel" (click)="addLoading(true)" type="button" class="btn btn-success mx-1">Save</button>
+        <button id="btnCancelAddHotel" (click)="addLoading(false)" type="button" class="btn btn-danger mx-1">Cancel</button>
+    </div>
+</div>
