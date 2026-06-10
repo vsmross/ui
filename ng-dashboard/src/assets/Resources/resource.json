@@ -18,6 +18,10 @@
         "Smart": {
             "Head": "Smart",
             "FileUploader": "File Uploader"
+        },
+        "Hotel": {
+            "Head": "Hotel",
+            "AddNewHotel": "Add New Hotel"
         }
     },
     "Headers":{

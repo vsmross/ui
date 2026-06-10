@@ -43,6 +43,10 @@ const routes: Routes = [
     {
       path: 'smart',
       loadChildren: () => import('./Components/Smart/smart.module').then(m => m.SmartModule)
+    },
+    {
+      path: 'hotel',
+      loadChildren: () => import('./Components/Hotel/hotel.module').then(m => m.HotelModule)
     }
   ]
 },

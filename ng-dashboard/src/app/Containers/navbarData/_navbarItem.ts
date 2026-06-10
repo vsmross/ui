@@ -13,10 +13,10 @@ export const navbarItem: navbarData[] = [
   },
   {
     title : true,
-    name: 'UI Controls',
+    name: 'Theme Color',
   },
   {
-    name: 'All Controls',
+    name: 'Colors',
     url: '/theme/color',
     icon: 'fa fa-eyedropper',
   },
@@ -25,7 +25,22 @@ export const navbarItem: navbarData[] = [
     name: 'Tools',
   },
   {
-    name: 'File Operations',
+    name: 'Hotel',
+    url: '/hotel',
+    icon: 'fa fa-th-large',
+    children: [
+      {
+        name: 'Add New Hotel',
+        url: '/hotel/addNewHotel',
+        badge: {
+          class: 'bg-danger',
+          text: 'New'
+        }
+      }
+    ]
+  },
+  {
+    name: 'Smart',
     url: '/smart',
     icon: 'fa fa-th-large',
     children: [
