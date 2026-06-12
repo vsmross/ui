@@ -12,19 +12,6 @@ export const navbarItem: navbarData[] = [
     }
   },
   {
-    title : true,
-    name: 'Theme Color',
-  },
-  {
-    name: 'Colors',
-    url: '/theme/color',
-    icon: 'fa fa-eyedropper',
-  },
-  {
-    title : true,
-    name: 'Tools',
-  },
-  {
     name: 'Hotel',
     url: '/hotel',
     icon: 'fa fa-th-large',
@@ -40,78 +27,17 @@ export const navbarItem: navbarData[] = [
     ]
   },
   {
-    name: 'Smart',
-    url: '/smart',
-    icon: 'fa fa-th-large',
-    children: [
-      {
-        name: 'File Uploader',
-        url: '/smart/fileUploader',
-        badge: {
-          class: 'bg-danger',
-          text: 'PRO'
-        }
-      },
-      {
-        name: 'Image Cropper',
-        url: '/smart/imageCropper',
-        badge: {
-          class: 'bg-danger',
-          text: 'PRO'
-        }
-      },
-      {
-        name: 'Date Time Picker',
-        url: '/smart/datePicker',
-        badge: {
-          class: 'bg-danger',
-          text: 'PRO'
-        }
-      },
-      {
-        name: 'Select And Multi Select',
-        url: '/smart/select',
-        badge: {
-          class: 'bg-danger',
-          text: 'PRO'
-        }
-      },
-      {
-        name: 'Slider And Range Slider',
-        url: '/smart/slider',
-        badge: {
-          class: 'bg-danger',
-          text: 'PRO'
-        }
-      },
-      {
-        name: 'Html Editor',
-        url: '/smart/htmlEditor',
-        badge: {
-          class: 'bg-danger',
-          text: 'PRO'
-        }
-      }]
+    title : true,
+    name: 'Theme Color',
   },
   {
-    name: 'Chart',
-    url: '/',
-    icon: 'fa fa-pie-chart',
+    name: 'Colors',
+    url: '/theme/color',
+    icon: 'fa fa-eyedropper',
   },
   {
-    name: 'Forms',
-    url: '/',
-    icon: 'fa fa-pencil-square',
-    children: [
-      {
-        name: 'Dropdown',
-        url: '/'
-      },
-      {
-        name: 'Date Picker',
-        url: '/'
-      }
-    ]
+    title : true,
+    name: 'Tools',
   },
   {
     name: 'Signin',
